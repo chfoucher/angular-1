@@ -12,7 +12,7 @@ function LunchCheckController($scope) {
   $scope.analyse = function() {
     if ($scope.dishes == "") $scope.message = "Please enter data first";
     else {
-      var nbOfDishes = $scope.dishes.split(';').length;
+      var nbOfDishes = $scope.dishes.split('s').length;
       if (nbOfDishes <= 3) $scope.message = "Enjoy!";
       else $scope.message = "Too much!";
     }
